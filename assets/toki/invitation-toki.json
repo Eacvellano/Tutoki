@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "asset": "invitation-toki.png",
+  "reference": "User-provided screen 7 invitation reference",
+  "transparent_background": true,
+  "dimensions": [1254, 1254],
+  "prompt": "Use the most recent attached reference (Tutoki group invitation page) strictly as visual reference. Create ONLY an isolated transparent PNG of the exact central original Toki meerkat mascot shown at the top of that reference: golden yellow fur, cream face/belly, brown ears, purple round eyeglasses, joyful closed eyes and open smile, original tuft of hair, holding a purple tablet with a simple lowercase t on it, orange cheerful accent rays near head. Preserve reference character drawing, proportions, colors, 3D illustrated rendering and pose as faithfully as possible; no redesign. Full hair, torso, hands, tablet and rays visible with padding, no clipping. No lavender background/blob, no groundline, no icons, no cards, no user interface, no other text, no shadow background. Only the same mascot+tablet+rays on genuinely transparent alpha background. This is a production header asset about square, not a full screenshot."
+}

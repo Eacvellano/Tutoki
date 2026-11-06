@@ -1,0 +1,19 @@
+{
+  "asset": "activity-panorama-line.png",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "reference-guided illustration / transparent PNG",
+  "size": [
+    2172,
+    724
+  ],
+  "alpha": {
+    "mode": "RGBA",
+    "range": [
+      0,
+      255
+    ],
+    "fully_transparent_percent": 88.84
+  },
+  "reference": "User-supplied screen 10 reference from this conversation",
+  "prompt": "Use case: precise-object-edit / style-transfer. Input image is a UI reference screenshot. Deliver ONE transparent PNG illustration asset ONLY, a wide panorama approximately 3:1 aspect ratio, intended to lie behind five adjacent UI cards. Recreate only the single continuous PURPLE LINE DRAWING visible across the five cards in the supplied reference, with no UI: the familiar Toki meerkat mascot waving at the center, happy closed eyes, large round glasses, tall playful hair tufts, rounded ears, open smiling mouth, torso down to the bottom. Preserve the reference mascot's identity, exact expressive pose and characteristic proportions, with the raised hand on the right. Keep all lines in a single refined medium purple (#9238c5 approximately), delicate clean slightly hand-drawn outlines, no raster photo texture or shadows. The mascot occupies the center about 35% of the full image width and extends through most of the panorama height. Surround it with only the same simple outline motifs shown in the reference: a small open book in the leftmost fifth, a magnifying glass in the second fifth, a small two-leaf potted sprout in the fourth fifth, a five-point star in the rightmost fifth. Include one continuous gentle wavy ground/path line spanning the entire width behind the mascot. All elements should match the reference linework, not thick flat icons. Background and all unfilled interiors must be truly TRANSPARENT so colored cards show through; absolutely no white or pastel fills, no 3D colored mascot, no orange fur, no panels, no rounded cards, no borders or dividers, no text, no letters, no toolbar, no logo, no navigation, no screen mockup. Do not return the full UI screenshot. Keep generous horizontal spacing and all illustration strokes fully inside the image edges. Output only the transparent line art panorama."
+}

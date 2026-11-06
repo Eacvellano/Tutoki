@@ -1,0 +1,106 @@
+{
+  "teacher": {
+    "source": "02-grupos.png",
+    "offset": [
+      515,
+      120
+    ],
+    "size": [
+      244,
+      329
+    ],
+    "source_sha256": "4bed670d41ce58cf40fd575f6b6fe2b3583af56acea7a53b281b99bd39eb3ce3",
+    "rgb_preserved": true
+  },
+  "detective": {
+    "source": "05-detective.png",
+    "offset": [
+      118,
+      199
+    ],
+    "size": [
+      281,
+      226
+    ],
+    "source_sha256": "363b5c676c96df731dcf739d6f52a6bc1d30bb0dcb615c2b56baaeb3ac9875c2",
+    "rgb_preserved": true
+  },
+  "think": {
+    "source": "06-primero-tu.png",
+    "offset": [
+      41,
+      353
+    ],
+    "size": [
+      329,
+      257
+    ],
+    "source_sha256": "86d39e5419c7a1268396c3a5480cc1c65c2b8ea7b9b7ace96fc4bf969031b45f",
+    "rgb_preserved": true
+  },
+  "wave": {
+    "source": "04-entrada-estudiante.png",
+    "offset": [
+      108,
+      195
+    ],
+    "size": [
+      265,
+      252
+    ],
+    "source_sha256": "30f13836de00dbb802d410033cd77290bab666c411e673a1512c73262afab99b",
+    "rgb_preserved": true
+  },
+  "celebrate": {
+    "source": "11-avance-familias.png",
+    "offset": [
+      545,
+      361
+    ],
+    "size": [
+      250,
+      198
+    ],
+    "source_sha256": "f04c2a724d0c6d342b887f9cd7bb37b2a0eecb39a0eacf69c9b3b28841de1082",
+    "rgb_preserved": true
+  },
+  "plant": {
+    "source": "09-reto-comunidad.png",
+    "offset": [
+      63,
+      196
+    ],
+    "size": [
+      334,
+      259
+    ],
+    "source_sha256": "8c17bf53a0947eb1c8192ed022c811321f069de332f2a2643dd6ee0a021c5473",
+    "rgb_preserved": true
+  },
+  "speak": {
+    "source": "08-defiendelo.png",
+    "offset": [
+      112,
+      178
+    ],
+    "size": [
+      291,
+      280
+    ],
+    "source_sha256": "1c02bcebe242e32cfbb7c4602a1fc97b159043e38ad21b04e591ecca753f0637",
+    "rgb_preserved": true
+  },
+  "debate": {
+    "source": "07-duelo.png",
+    "offset": [
+      71,
+      294
+    ],
+    "size": [
+      339,
+      248
+    ],
+    "source_sha256": "22f60a5c4c14d45e295f8fb5a09d37c07f35b1a24394dab1be1d035065a5c31e",
+    "rgb_preserved": true
+  }
+}

@@ -1,0 +1,125 @@
+/* Tutoki games — each activity gets its own tone; shared pieces stay consistent. */
+.tg{--tone:#f4eafb;--accent:#8125b5;--accent-soft:#ead4fb;max-width:780px;margin:0 auto;position:relative}
+.tg-primero{--tone:#fff5e5;--accent:#e07b00;--accent-soft:#ffe2b8}
+.tg-defiendelo{--tone:#eaf2fc;--accent:#2f6fd1;--accent-soft:#cfe0fa}
+.tg-comunidad{--tone:#edf5e8;--accent:#3f8f4a;--accent-soft:#d3ebc9}
+.tg-duelo{--tone:#fceee9;--accent:#d2513f;--accent-soft:#f9d3ca}
+
+/* Frame */
+.tg-top{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.tg-progress{flex:1;height:10px;border-radius:20px;background:var(--accent-soft);overflow:hidden}
+.tg-progress span{display:block;height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,var(--accent),#ffb34f);transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.tg-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:30px;background:var(--tone);color:var(--accent);font-weight:900;font-size:13px}
+.tg-chip svg{width:18px;height:18px}
+.tg-body{background:white;border:1px solid var(--line);border-radius:30px;padding:clamp(20px,4vw,38px);box-shadow:0 18px 50px -24px #5a1f7a40;background-image:radial-gradient(circle at 100% 0,var(--tone) 0,transparent 42%);min-height:440px}
+.tg [hidden]{display:none!important}
+.tg-scene{animation:tg-scene .45s cubic-bezier(.2,.8,.2,1)}
+.tg [data-in]{animation:tg-rise .55s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0) * 70ms)}
+.tg h2{font-size:clamp(22px,3vw,28px)}
+.tg-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.tg-row h2{margin:0}
+.tg-kicker{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.tg-kicker svg{width:17px;height:17px}
+.tg-counter{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:30px;background:var(--tone);color:var(--accent);font-weight:900;font-size:14px}
+.tg-counter b{font-size:18px}
+.tg-instruction{display:flex;gap:9px;align-items:flex-start;font-size:14px;font-weight:700;color:#6b5575;margin:14px 0}
+.tg-instruction svg{color:var(--accent);width:20px;height:20px}
+.tg-cta{width:100%;margin-top:20px;min-height:56px;font-size:16px;background:var(--accent)!important;color:white!important}
+.tg-cta:disabled{transform:none;box-shadow:none}
+
+/* Intro + countdown */
+.tg-intro{text-align:center}
+.tg-intro-art{width:min(210px,52vw);margin:-6px auto 10px}
+.tg-intro-art.small{width:120px}
+.tg-intro h1{font-size:clamp(30px,5vw,44px);margin-bottom:8px}
+.tg-lead{font-size:17px;max-width:520px;margin:0 auto 20px;min-height:3.3em;color:#5f4a69}
+.tg-steps{list-style:none;padding:0;margin:0 0 6px;display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.tg-steps li{display:flex;flex-direction:column;align-items:center;gap:8px;padding:15px 10px;border-radius:18px;background:var(--tone);font-weight:900;font-size:13px}
+.tg-steps svg{color:var(--accent);width:26px;height:26px}
+.tg-ethic{display:flex;justify-content:center;align-items:center;gap:7px;font-size:12px;margin:14px 0 0}
+.tg-ethic svg{width:17px;height:17px;color:var(--accent)}
+.tg-count{position:absolute;inset:0;z-index:5;display:grid;place-items:center;border-radius:30px;background:color-mix(in srgb,var(--accent) 92%,black);color:white}
+.tg-count span{font:1000 clamp(90px,18vw,160px)/1 'Mali','Nunito',sans-serif;animation:tg-pop .6s cubic-bezier(.2,1.6,.4,1) both}
+.tg-count span.go{font-size:clamp(40px,8vw,70px)}
+
+/* AI voice */
+.tg-ai{border-radius:22px;background:linear-gradient(180deg,#fbf7ff,#fff);border:1.5px solid var(--accent-soft);padding:16px 18px 18px;margin:14px 0;position:relative}
+.tg-ai-head{display:flex;align-items:center;gap:9px;margin-bottom:10px;font-size:14px}
+.tg-ai-avatar{width:34px;height:34px;border-radius:50%;background:#f3e6fc;display:block;flex-shrink:0}
+.tg-ai-tag{margin-left:auto;display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:800;color:#8a6b96;background:#f6effa;padding:5px 9px;border-radius:20px}
+.tg-ai-tag svg{width:14px;height:14px}
+.tg-ai-body{font-size:18px;line-height:1.7;font-weight:600;white-space:pre-wrap}
+.tg-ai-rival{border-color:#f3b8ab;background:linear-gradient(180deg,#fff6f3,#fff)}
+.tg-typing::after{content:'';display:inline-block;width:3px;height:1.1em;margin-left:2px;vertical-align:-3px;background:var(--accent);animation:tg-caret .8s steps(1) infinite}
+.tg-thinking{display:flex;align-items:center;gap:10px;font-weight:800;color:#7c6584;margin:16px 0}
+.tg-thinking span{width:62px;height:62px;display:block}
+
+/* Detective */
+.tg-ai-case .tg-ai-body{font-family:'Nunito',sans-serif}
+.tg-sentence{display:inline;text-align:left;font:inherit;line-height:inherit;padding:2px 3px;border-radius:8px;transition:background .2s,box-shadow .2s;cursor:pointer}
+.tg-sentence:disabled{cursor:default;opacity:1}
+.tg-sentence:not(:disabled):hover{background:#f2e3fc}
+.tg-sentence.marked{background:#ffe08f;box-shadow:inset 0 -3px #f2a93b;animation:tg-mark .35s}
+.tg-evidence{margin:4px 0 16px;padding:18px 20px;border-left:5px solid var(--accent);border-radius:14px;background:var(--tone);font-size:19px;font-weight:800}
+.tg-verdicts{list-style:none;padding:0;margin:14px 0;display:grid;gap:10px}
+.tg-verdicts li{padding:14px 16px;border-radius:16px;border:1.5px solid var(--line);opacity:.25;transform:scale(.98);transition:.4s cubic-bezier(.2,.8,.2,1)}
+.tg-verdicts li.shown{opacity:1;transform:none}
+.tg-verdicts li p{margin:6px 0;font-size:14px;line-height:1.5}
+.tg-verdicts li small{display:flex;gap:6px;align-items:center;font-size:12px}
+.tg-verdicts li small svg,.tg-fix svg{width:15px;height:15px}
+.tg-verdicts li.found{background:#effaeb;border-color:#9ccf8f}
+.tg-verdicts li.missed{background:#fff4e5;border-color:#f3c27c}
+.tg-verdicts li.false-alarm{background:#f6f2f8}
+.tg-verdict-tag{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:1000;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px;color:var(--accent)}
+.found .tg-verdict-tag{color:#3c8a3e}.missed .tg-verdict-tag{color:#c46f00}
+.tg-verdict-tag svg{width:16px;height:16px}
+.tg-fix{display:flex;gap:6px;align-items:flex-start;font-weight:800;color:#3c8a3e!important}
+.tg-stamp{margin:18px auto 0;width:max-content;padding:10px 22px;border:4px solid var(--accent);border-radius:12px;color:var(--accent);font:1000 26px 'Mali','Nunito',sans-serif;text-transform:uppercase;transform:rotate(-6deg);animation:tg-stamp .5s cubic-bezier(.2,1.4,.4,1) both}
+
+/* Choices shared by forms */
+.tg-form .field{margin-top:14px}
+.tg-form textarea{min-height:96px}
+.tg-chips{border:0;padding:0;margin:8px 0 0;min-width:0;display:flex;flex-wrap:wrap;gap:9px}
+.tg-chips legend,.tg-hand legend{font-weight:900;margin-bottom:10px;display:flex;align-items:center;gap:7px;padding:0}
+.tg-chip-option input,.tg-tile input,.tg-problem input,.tg-card input,.tg-rate input{position:absolute;opacity:0;pointer-events:none}
+.tg-chip-option{position:relative}
+.tg-chip-option span{display:inline-block;padding:10px 15px;border-radius:30px;border:1.5px solid var(--line);background:white;font-weight:800;font-size:14px;cursor:pointer;transition:.18s}
+.tg-chip-option:hover span{border-color:var(--accent)}
+.tg-chip-option input:checked+span{background:var(--accent);border-color:var(--accent);color:white;transform:translateY(-2px)}
+.tg-chip-option input:disabled+span{opacity:.4;cursor:not-allowed}
+.tg-chip-option input:focus-visible+span,.tg-tile input:focus-visible~span,.tg-problem input:focus-visible~strong,.tg-card input:focus-visible+span,.tg-rate input:focus-visible+span{outline:3px solid #d397f5;outline-offset:3px}
+
+/* Done */
+.tg-done{text-align:center;padding:10px 0}
+.tg-done-anim{width:170px;height:170px;margin:0 auto}
+.tg-done-actions{display:grid;gap:10px;max-width:360px;margin:18px auto 0}
+
+/* Teacher: generating overlay + review */
+.tg-generating{position:fixed;inset:0;z-index:60;display:grid;place-items:center;background:#2b0f3acc;backdrop-filter:blur(6px);animation:appear .3s}
+.tg-generating-card{width:min(420px,calc(100vw - 32px));padding:28px;border-radius:28px;background:white;text-align:center;box-shadow:0 30px 80px -20px #000a}
+.tg-generating-card .art{width:150px;margin:0 auto}
+.tg-generating-dots{display:block;width:80px;height:50px;margin:0 auto}
+.tg-generating-text{font-weight:900;font-size:17px;color:var(--ink);min-height:2.8em;margin:4px 0}
+.tg-review .row{flex-wrap:wrap;justify-content:flex-start}
+.tg-review-note{display:flex;gap:8px;align-items:center;font-size:13px;background:#f6edfc;padding:10px 14px;border-radius:12px}
+.tg-review-note svg{width:17px;height:17px;color:var(--purple)}
+.tg-review-list{display:grid;gap:9px;padding-left:20px}
+.tg-review-list li{line-height:1.5}
+.tg-review-list li>*{display:block;margin-top:3px}
+.tg-review-list li.is-error{background:#fff6e8;border-radius:12px;padding:8px 10px}
+.tg-review-q{padding:13px 16px;border-radius:14px;background:var(--lilac);font-weight:800}
+.tg-edit{border-radius:6px;outline:1.5px dashed transparent;outline-offset:2px;transition:outline-color .2s}
+.tg-edit:hover{outline-color:#c99be6}
+.tg-edit:focus{outline:2px solid var(--purple);background:#fff}
+
+@keyframes tg-scene{from{opacity:0;transform:translateY(14px)}}
+@keyframes tg-rise{from{opacity:0;transform:translateY(16px) scale(.98)}}
+@keyframes tg-pop{0%{opacity:0;transform:scale(.3)}100%{opacity:1;transform:scale(1)}}
+@keyframes tg-caret{50%{opacity:0}}
+@keyframes tg-mark{50%{transform:scale(1.04)}}
+@keyframes tg-stamp{0%{opacity:0;transform:scale(2.4) rotate(-14deg)}100%{opacity:1;transform:scale(1) rotate(-6deg)}}
+@keyframes tg-seal{0%{transform:scale(.2) rotate(-30deg)}60%{transform:scale(1.15) rotate(6deg)}100%{transform:none}}
+@keyframes tg-shot{from{opacity:0;transform:translateX(40px)}}
+
+body.reduce-motion .tg *,body.reduce-motion .tg-generating *{animation:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){.tg *{animation:none!important;transition:none!important}}
