@@ -115,6 +115,10 @@ const log = (...a) => console.log('•', ...a);
       await __t.click('[data-tg=check]'); await __t.wait('input[name=type]'); document.querySelector('input[name=type]').click(); await __t.fill('textarea[name=why]','asd');
       await __t.submit('.tg-form'); return document.querySelector('textarea[name=why]')?.validationMessage || ''`);
     if (!blocked) throw new Error('junk answer was accepted'); log('junk answer blocked:', blocked);
+    // After fixing the text the error must clear and the form must go through.
+    await s.run(`const el = document.querySelector('textarea[name=why]'); el.value = 'La luz sí cambia cómo crecen las plantas según el experimento';
+      el.dispatchEvent(new Event('input', { bubbles: true })); await __t.submit('.tg-form'); await __t.wait('[data-tg=next]', 15000)`);
+    log('corrected answer accepted after the error');
 
     // Teacher reviews; student sees feedback.
     const groupId = await t.run(`return (await (await fetch('/api/groups')).json())[0].id`);

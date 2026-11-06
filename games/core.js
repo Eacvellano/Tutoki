@@ -58,7 +58,8 @@ function makeCtx(activity, root, meta, opts) {
       if (!el || !scope.contains(el) || el.disabled) return;
       scope.removeEventListener('click', handler); sfx('tap'); resolve(el);
     })),
-    form: form => new Promise(resolve => form.addEventListener('submit', function handler(e) {
+    // A custom validity error blocks the submit event itself, so it must be cleared while typing.
+    form: form => new Promise(resolve => form.addEventListener('input', e => e.target.setCustomValidity?.('')) || form.addEventListener('submit', function handler(e) {
       e.preventDefault();
       form.querySelectorAll('textarea[required]').forEach(t => t.setCustomValidity(seemsEmpty(t.value) ? 'Escribe una idea completa, con al menos unas palabras.' : ''));
       if (!form.checkValidity()) return form.reportValidity();
